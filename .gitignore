@@ -1,0 +1,13 @@
+# OCaml build artifacts
+*.cmi
+*.cmo
+*.cmx
+*.o
+*.a
+*.cmxa
+_build/
+.merlin
+
+# Executables
+typechecker
+a.out
