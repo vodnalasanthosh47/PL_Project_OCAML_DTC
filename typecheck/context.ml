@@ -1,4 +1,4 @@
-(** context.ml — Typing contexts as association lists.
+(** context.ml -- Typing contexts as association lists.
     
     A context maps variable names to their types. Extending a context
     with a name that already exists shadows the previous binding. *)
