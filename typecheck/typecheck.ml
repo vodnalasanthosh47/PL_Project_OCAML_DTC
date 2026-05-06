@@ -1,7 +1,5 @@
 (** typecheck.ml -- Bidirectional type checking for dependent types. *)
 
-module Typecheck = struct
-
 open Ast
 open Context
 
@@ -117,5 +115,3 @@ and infer_universe (ctx : context) (t : expr) : int =
     type_error (Printf.sprintf
       "Expected a type (universe), but %s has type %s"
       (string_of_expr t) (string_of_expr u))
-
-end
