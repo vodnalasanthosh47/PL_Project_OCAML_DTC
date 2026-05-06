@@ -1,0 +1,2 @@
+assume add : Pi(_ : Nat). Pi(_ : Nat). Nat
+infer Pi(A : Type0). Pi(n : Nat). Pi(m : Nat). Pi(_ : Vec A n). Pi(_ : Vec A m). Vec A (App (App add n) m)

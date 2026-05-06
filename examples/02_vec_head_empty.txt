@@ -1,0 +1,4 @@
+assume A : Type0
+assume head : Pi(A : Type0). Pi(n : Nat). Pi(_ : Vec A (Succ n)). A
+assume empty_vec : Vec A Zero
+infer App (App (App head A) Zero) empty_vec

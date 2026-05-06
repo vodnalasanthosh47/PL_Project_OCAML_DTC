@@ -1,0 +1,1 @@
+infer Pi(i : Nat). Pi(j : Nat). Pi(k : Nat). Pi(_ : Mat i j). Pi(_ : Mat j k). Mat i k

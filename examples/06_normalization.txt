@@ -1,0 +1,1 @@
+equal Vec Nat (Succ (Succ Zero)) = Vec Nat (App (Lambda(n : Nat). Succ (Succ n)) Zero)

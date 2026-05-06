@@ -1,0 +1,4 @@
+assume mul : Pi(i : Nat). Pi(j : Nat). Pi(k : Nat). Pi(_ : Mat i j). Pi(_ : Mat j k). Mat i k
+assume mat_3_4 : Mat (Succ (Succ (Succ Zero))) (Succ (Succ (Succ (Succ Zero))))
+assume mat_5_6 : Mat (Succ (Succ (Succ (Succ (Succ Zero))))) (Succ (Succ (Succ (Succ (Succ (Succ Zero))))))
+infer App (App (App (App (App mul (Succ (Succ (Succ Zero)))) (Succ (Succ (Succ (Succ Zero))))) (Succ (Succ (Succ (Succ (Succ (Succ Zero))))))) mat_3_4) mat_5_6
